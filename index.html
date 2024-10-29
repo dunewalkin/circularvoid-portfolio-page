@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Andrey Kashin CV</title>
+   <link rel="stylesheet" href="./public/css/reset.css">
+   <link rel="stylesheet" href="./public/css/styles.css">
+   <link rel="stylesheet" href="./public/css/sidebar.css">
+</head>
+<body>
+   <aside class="sidebar">
+      <h1>andrey kashin</h1>
+      <nav>
+         <ul>
+               <li><a href="#" data-page="about">About</a></li>
+               <li><a href="#" data-page="cv">CV</a></li>
+               <li><a href="#" data-page="music">Music</a></li>
+               <li><a href="#" data-page="sound">Sound</a></li>
+         </ul>
+      </nav>
+   </aside>
+
+   <div class="content" id="content"></div>
+
+   <script>
+
+   document.addEventListener('DOMContentLoaded', () => {
+      const links = document.querySelectorAll('.sidebar a');
+      const contentDiv = document.getElementById('content');
+
+      const setActiveLink = (activeLink) => {
+         // Убираем класс link-active у всех ссылок
+         links.forEach(link => link.classList.remove('link-active'));
+         // Добавляем класс link-active к активной ссылке
+         activeLink.classList.add('link-active');
+      };
+
+      const loadPage = (page) => {
+         fetch(`views/${page}.html`)
+            .then(response => response.text())
+            .then(data => {
+               contentDiv.innerHTML = data;
+               window.history.pushState({page: page}, "", `#${page}`);
+            })
+            .catch(error => console.error('Ошибка загрузки:', error));
+      };
+
+      links.forEach(link => {
+         link.addEventListener('click', (event) => {
+            event.preventDefault();
+            const page = event.target.getAttribute('data-page');
+            loadPage(page);
+            setActiveLink(event.target);
+         });
+      });
+
+      // Загрузка страницы "about" по умолчанию
+      loadPage('about');
+      setActiveLink(document.querySelector(`.sidebar a[data-page="about"]`));
+   });
+</script>
+</body>
+</html>
+
