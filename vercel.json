@@ -15,27 +15,30 @@
      }
    ],
    "routes": [
-  {
-    "src": "/about",
-    "dest": "/views/about.html"
-  },
-  {
-    "src": "/cv",
-    "dest": "/views/cv.html"
-  },
-  {
-    "src": "/music",
-    "dest": "/views/music.html"
-  },
-  {
-    "src": "/sound",
-    "dest": "/views/sound.html"
-  },
-  {
-    "src": "/(.*)",
-    "dest": "/index.html"
-  }
-]
-
+     {
+       "src": "/about",
+       "dest": "/views/about.html"
+     },
+     {
+       "src": "/cv",
+       "dest": "/views/cv.html"
+     },
+     {
+       "src": "/music",
+       "dest": "/views/music.html"
+     },
+     {
+       "src": "/sound",
+       "dest": "/views/sound.html"
+     },
+     {
+       "src": "/views/(.*)",
+       "dest": "/views/$1"
+     },
+     {
+       "src": "/(.*)",
+       "dest": "/index.html"
+     }
+   ]
  }
  
