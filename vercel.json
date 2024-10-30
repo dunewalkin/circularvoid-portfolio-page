@@ -1,0 +1,40 @@
+{
+   "version": 2,
+   "builds": [
+     {
+       "src": "index.html",
+       "use": "@vercel/static"
+     },
+     {
+       "src": "public/**/*",
+       "use": "@vercel/static"
+     },
+     {
+       "src": "views/**/*",
+       "use": "@vercel/static"
+     }
+   ],
+   "routes": [
+     {
+       "src": "/",
+       "dest": "/index.html"
+     },
+     {
+       "src": "/about",
+       "dest": "/views/about.html"
+     },
+     {
+       "src": "/cv",
+       "dest": "/views/cv.html"
+     },
+     {
+       "src": "/music",
+       "dest": "/views/music.html"
+     },
+     {
+       "src": "/sound",
+       "dest": "/views/sound.html"
+     }
+   ]
+ }
+ 
