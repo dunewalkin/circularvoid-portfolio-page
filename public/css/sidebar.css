@@ -36,12 +36,10 @@
    }
 
    a:hover {
-      /* text-decoration: line-through; */
       color: #000;
    }
 
    .link-active {
-      /* text-decoration: line-through; */
       color: #000;
    }
 }

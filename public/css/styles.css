@@ -62,13 +62,13 @@ p span {
    }
 }
 
-/* ABOUT */
+/* About */
 
 .about-container {
    display: flex;
    flex-direction: column;
    gap: 2rem; 
-   padding: 2rem; 
+   padding: 1.5rem 2rem; 
    max-width: 60rem;
 }
 
@@ -77,7 +77,7 @@ p span {
    flex-direction: row;
    align-items: center;
    gap: 2rem; 
-   padding: 1.5rem;
+   padding: 1.5rem 0;
 }
 
 .item:nth-child(even) {
@@ -95,264 +95,120 @@ p span {
 
 }
 
-img {
-   width: 100%; 
-   height: auto;
-   object-fit: cover; 
-}
-
-a {
+.about-container a {
    color: #666666; 
    transition: color 0.3s ease; 
 }
 
-a:hover {
+.about-container a:hover {
    color: #333333; 
 }
 
 /* CV */
 
-/* 
-.cv-container {
-   display: flex;
-   flex-direction: column;
-   align-items: center; 
-   padding: 2rem;
-   gap: 2rem; 
-}
-
-.about-header {
-   text-align: center;
-   margin-bottom: 20px;
-   
-   h2 {
-      font-family: "Druk Wide", sans-serif;
-      font-size: 2rem;
-      margin-bottom: 10px;
-   }
-}
-
-.cv-content {
-   display: flex;
-   flex-direction: row;
-   gap: 3rem;
-}
-
-.cv-photo-wrapper {
-   flex: 1; 
-   width: 15rem;
-}
-
-.cv-photo {
-   flex: 0 0 150px; 
-   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
-}
-
-.cv-about {
-   flex: 1; 
-}
-
-.cv-title {
-   font-family: 'Druk Wide', sans-serif;
-   font-size: 1.8rem;
-   font-weight: 600;
-   margin-bottom: 0.5rem;
-}
-
-.cv-subtitle {
-   font-family: 'Playfair Display', serif;
-   font-size: 1.2rem;
-   font-weight: 600;
-   margin-bottom: 1rem;
-   color: #666;
-}
-
-.cv-contact, .cv-languages, .cv-links {
-   margin-top: 1.5rem;
-}
-
-.cv-contact a, .cv-links a {
-   color: #0066cc;
-   text-decoration: none;
-   transition: color 0.3s ease;
-}
-
-.cv-contact a:hover, .cv-links a:hover {
-   color: #004a99;
-}
-
-.cv-section-title {
-   font-size: 1rem;
-   font-weight: 600;
-   text-transform: uppercase;
-   margin-bottom: 0.5rem;
-   color: #333;
-}
-
-.full-information {
-   max-width: 800px;
-   margin: 20px auto;
-   padding: 20px;
-   font-family: "Inter", sans-serif;
-
-
-   h2, h3 {
-      font-family: "Druk Wide", sans-serif;
-   }
-   
-   h2 {
-      font-size: 2rem;
-      margin-bottom: 10px;
-   }
-   
-   h3 {
-      font-size: 1.5rem;
-      margin-top: 20px;
-   }
-   
-  
-   
-   ul {
-      list-style-type: none;
-      padding: 0;
-   }
-   
-   li {
-      margin-bottom: 10px;
-   }
-   
-   a {
-      color: gray;
-      text-decoration: none;
-   }
-   
-   a:hover {
-      color: #333;
-      text-decoration: underline;
-   }
-   
-   @media (max-width: 600px) {
-      .profile-card {
-          padding: 10px;
-      }
-   
-      h2 {
-          font-size: 1.5rem;
-      }
-   
-      h3 {
-          font-size: 1.2rem;
-      }
-   }
-} */
-
-
-
-
 
 .cv-container {
    max-width: 60rem;
    margin: 0 auto;
-   padding: 1.25rem; /* 20px */
+   padding: 1.5rem;
    font-family: "Inter", sans-serif;
    line-height: 1.6;
 }
 
 .cv-content {
    display: grid;
-   grid-template-columns: 1fr 1fr 0.7fr; 
-   gap: 1rem; 
+   grid-template-columns: 1fr 1fr;
+   gap: 2rem; 
    align-items: start;
    margin: 0 auto;
-   font-family: "Inter", sans-serif;
+   max-width: 60rem;
+   margin-bottom: 1.5rem;
 }
 
-.cv-info,
-.cv-languages,
-.cv-links,
-.cv-contact {
-   margin-bottom: 1rem;
-}
-
-.cv-content h2 {
+.cv-info h2 {
    font-family: "Druk Wide", sans-serif;
-   font-size: 1.4rem;
-   margin-bottom: 0.5rem;
+   font-size: 1.4rem; 
+   margin-bottom: 0.4rem;
 }
 
-.cv-info p {
-   font-size: 0.95rem;
-   margin: 0.2rem 0; /* Минималистичные отступы между строками */
+.cv-info h3 {
+   font-size: 1.4rem; 
+   font-weight: normal;
+   margin-bottom: 0.6rem;
+   color: #333;
+}
+
+.cv-info p,
+.cv-section-title,
+.cv-container a {
+   font-size: 1.2rem;
+   color: #333;
+}
+
+.cv-contact p:not(:first-child),
+.cv-languages li {
+   font-size: 1.2rem;
 }
 
 .cv-section-title {
    font-weight: bold;
-   font-size: 1rem;
-   /* margin-top: 0.9rem; */
-   margin-bottom: 0.4rem;
+   font-size: 1.3rem;
+   margin-bottom: 0.8rem;
 }
 
-ul {
-   list-style: none;
-   padding: 0;
-   margin: 0;
+.cv-links,
+.cv-languages,
+.cv-contact {
+   margin-bottom: 1.5rem;
 }
 
-a {
-   color: gray;
+.cv-container a {
+   color: #555;
    text-decoration: none;
-   font-size: 0.9rem;
+   font-size: 1.2rem;
 }
 
-a:hover {
+.cv-container a:hover {
    text-decoration: underline;
 }
 
 .cv-photo-wrapper {
    display: flex;
-   justify-content: center;
-   align-items: flex-start;
-}
-
-.cv-languages {
-   margin-top: 2.4rem;
+   grid-column: 2;
+   grid-row: 1 / span 2;
 }
 
 .cv-photo {
    width: 100%;
+   max-width: 22rem;
    object-fit: cover;
 }
 
 .cv-info {
-   grid-column: 2; 
+   grid-column: 1;
    grid-row: 1;
+   align-self: center;
 }
 
 .cv-languages {
-   grid-column: 3; 
-   grid-row: 1;
+   grid-column: 1;
+   grid-row: 3;
 }
 
 .cv-links {
-   grid-column: 3; 
-   grid-row: 2;
+   grid-column: 2;
+   grid-row: 3;
 }
 
 .cv-contact {
-   grid-column: 2; 
+   grid-column: 1;
    grid-row: 2;
 }
-   
-.cv-photo-wrapper {
-   grid-column: 1;
-   grid-row: 1 / span 3; 
-}
 
-
-.cv-info {
+.cv-main {
    h2 {
       font-family: "Druk Wide", sans-serif;
-      font-size: 1.4rem; /* Уменьшенный размер шрифта */
+      font-size: 1.4rem; 
       margin-bottom: 0.3rem;
    }
    
@@ -383,7 +239,6 @@ a:hover {
       margin-bottom: 0.5rem; 
    }
    
-   /* Общее для текста и ссылок */
    p, a {
       font-size: 0.9rem;
    }
@@ -408,34 +263,40 @@ a:hover {
 /* Music */
 
 .music-container {
-   display: flex;
-   flex-wrap: wrap;
-   gap: 1rem;
-   max-width: 60rem;
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   gap: 1.8rem;
+   max-width: 50rem;
    margin: 0 auto;
-   margin-block: 2rem;
+   margin-block: 3.5rem;
 }
 
 .gallery-item {
    display: flex;
    flex-direction: column;
-   align-items: center;
-   max-width: 300px; /* Ограничение ширины элемента галереи */
+}
+
+.music-container :nth-last-child(2) {
+   grid-column: span 2;
 }
 
 .gallery-item img {
-   width: 100%; /* Масштабирует изображение по ширине контейнера */
-   height: auto; /* Сохраняет пропорции изображения */
-   object-fit: contain; /* Избегает обрезки, подстраивая изображение */
+   width: 100%; 
+   height: auto; 
+   object-fit: contain; 
 }
 
 
-.gallery-item iframe {
+.youtube-item iframe {
    width: 100%;
-   max-height: 300px;
-   border-radius: 8px;
-   margin-bottom: 0.5rem;
+   aspect-ratio: 16 / 9; 
 }
+
+.vimeo-item iframe {
+   width: 100%;
+   aspect-ratio: 5.5 / 4.1; 
+}
+
 
 .gallery-item p {
    font-size: 0.9rem;
@@ -444,7 +305,17 @@ a:hover {
 
 .gallery-item a {
    color: gray;
-   text-decoration: none;
+}
+
+.gallery-item a:hover {
+   text-decoration: underline;
+}
+
+.youtube-item,
+.vimeo-item {
+   grid-column: span 2;
+   /* Maintains 16:9 ratio for video */
+   width: 100%;
 }
 
 
@@ -456,33 +327,36 @@ a:hover {
    padding: 1.5rem;
    font-family: 'Inter', sans-serif; 
    color: #333; 
+
+
+   h3 {
+      font-family: 'Druk Wide', sans-serif; 
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+      color: #000; 
+   }
+   
+   p {
+      font-size: 1rem;
+      line-height: 1.6;
+   }
+   
+   ul {
+      list-style-type: disc;
+      padding-left: 1.25rem;
+      column-gap: 1rem;
+      margin-block: 1.25rem;
+   }
+   
+   li {
+      font-size: 1rem;
+      line-height: 1.6;
+      break-inside: avoid;
+      padding: 0.3rem 0; 
+   }
 }
 
-.sound-container h3 {
-   font-family: 'Druk Wide', sans-serif; 
-   font-size: 1.8rem;
-   margin-bottom: 1rem;
-   color: #000; 
-}
 
-.sound-container p {
-   font-size: 1rem;
-   line-height: 1.6;
-}
-
-.sound-container ul {
-   list-style-type: disc;
-   padding-left: 1.25rem;
-   column-gap: 1rem;
-   margin-block: 1.25rem;
-}
-
-.sound-container li {
-   font-size: 1rem;
-   line-height: 1.6;
-   break-inside: avoid;
-   padding: 0.3rem 0; 
-}
 
 
 
