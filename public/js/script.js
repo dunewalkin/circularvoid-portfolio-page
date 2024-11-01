@@ -28,15 +28,13 @@ document.addEventListener('DOMContentLoaded', () => {
       });
    });
 
-   // Загрузка начальной страницы
    const initialPage = window.location.hash ? window.location.hash.slice(1) : 'about';
    loadPage(initialPage, initialPage !== 'about');
    setActiveLink(document.querySelector(`.sidebar a[data-page="${initialPage}"]`));
 
-   // Обработка события popstate для навигации браузера
    window.addEventListener('popstate', (event) => {
       const page = event.state ? event.state.page : 'about';
-      loadPage(page, false); // загружаем страницу без добавления в историю
+      loadPage(page, false);
       setActiveLink(document.querySelector(`.sidebar a[data-page="${page}"]`));
    });
 });
