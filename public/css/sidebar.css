@@ -5,43 +5,43 @@
    width: 15rem;
    height: 100vh;
    padding: 1.5rem 2rem; 
+}
 
-   h1 {
-      font-family: 'Druk Wide', sans-serif;
-      text-transform: uppercase;
-      color: #000;
-      font-size: 1.4rem;
-      font-weight: 600;
-      line-height: 1.2; 
-   }
+.sidebar h1 {
+   font-family: 'Druk Wide', sans-serif;
+   text-transform: uppercase;
+   color: #000;
+   font-size: 1.4rem;
+   font-weight: 600;
+   line-height: 1.2; 
+}
 
-   nav {
-      margin-top: 2rem; 
-   }
+.sidebanav {
+   margin-top: 2rem; 
+}
 
-   ul {
-      display: flex;
-      flex-direction: column;
-      gap: 0.5rem; 
-   }
+.sidebar ul {
+   display: flex;
+   flex-direction: column;
+   gap: 0.5rem; 
+}
 
-   a {
-      font-family: "Playfair Display", serif;
-      font-weight: 600;
-      font-size: 1rem; 
-      line-height: 1.4; 
-      text-transform: uppercase;
-      color: #666666;
-      transition: color 0.3s ease; 
-   }
+.sidebar a {
+   font-family: "Playfair Display", serif;
+   font-weight: 600;
+   font-size: 1rem; 
+   line-height: 1.4; 
+   text-transform: uppercase;
+   color: #666666;
+   transition: color 0.3s ease; 
+}
 
-   a:hover {
-      color: #000;
-   }
+.sidebar a:hover {
+   color: #000;
+}
 
-   .link-active {
-      color: #000;
-   }
+.link-active {
+   color: #000;
 }
 
 

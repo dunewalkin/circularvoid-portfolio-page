@@ -54,11 +54,11 @@ p span {
    justify-content: center;
    flex: 1; 
    overflow-y: auto; 
-
-   span {
-      font-weight: 600;
-   }
 }
+.content span {
+   font-weight: 600;
+}
+
 
 /* About */
 
@@ -203,43 +203,42 @@ p span {
    grid-row: 2;
 }
 
-.cv-main {
-   h2 {
-      font-family: "Druk Wide", sans-serif;
-      font-size: 1.4rem; 
-      margin-bottom: 0.3rem;
-   }
+.cv-main h2 {
+   font-family: "Druk Wide", sans-serif;
+   font-size: 1.4rem; 
+   margin-bottom: 0.3rem;
+}
    
-   h3 {
-      font-family: "Austin", serif;
-      font-size: 1.4rem;
-      margin-top: 20px;
-      margin-bottom: 10px;
-   }
+.cv-main h3 {
+   font-family: "Austin", serif;
+   font-size: 1.4rem;
+   margin-top: 20px;
+   margin-bottom: 10px;
+}
 
 
-   a {
-      color: gray;
-      text-decoration: none;
-   }
-   
-   a:hover {
-      text-decoration: underline;
-   }
-   
-   ul {
-      list-style: none;
-      padding: 0;
-      margin: 0.6rem 0;
-   }
-   
-   li {
-      margin-bottom: 0.5rem; 
-   }
-   
-   p, a {
-      font-size: 0.9rem;
-   }
+.cv-main a {
+   color: gray;
+   text-decoration: none;
+}
+
+.cv-main a:hover {
+   text-decoration: underline;
+}
+
+.cv-main ul {
+   list-style: none;
+   padding: 0;
+   margin: 0.6rem 0;
+}
+
+.cv-main li {
+   margin-bottom: 0.5rem; 
+}
+
+.cv-main p, 
+.cv-main a {
+   font-size: 0.9rem;
 }
 
 .cv-grid {
@@ -324,34 +323,34 @@ p span {
    padding: 1.5rem;
    font-family: 'Inter', sans-serif; 
    color: #333; 
-
-
-   h3 {
-      font-family: 'Druk Wide', sans-serif; 
-      font-size: 1.8rem;
-      margin-bottom: 1rem;
-      color: #000; 
-   }
-   
-   p {
-      font-size: 1rem;
-      line-height: 1.6;
-   }
-   
-   ul {
-      list-style-type: disc;
-      padding-left: 1.25rem;
-      column-gap: 1rem;
-      margin-block: 1.25rem;
-   }
-   
-   li {
-      font-size: 1rem;
-      line-height: 1.6;
-      break-inside: avoid;
-      padding: 0.3rem 0; 
-   }
 }
+
+.sound-container h3 {
+   font-family: 'Druk Wide', sans-serif; 
+   font-size: 1.8rem;
+   margin-bottom: 1rem;
+   color: #000; 
+}
+
+.sound-container p {
+   font-size: 1rem;
+   line-height: 1.6;
+}
+
+.sound-container ul {
+   list-style-type: disc;
+   padding-left: 1.25rem;
+   column-gap: 1rem;
+   margin-block: 1.25rem;
+}
+
+.sound-container li {
+   font-size: 1rem;
+   line-height: 1.6;
+   break-inside: avoid;
+   padding: 0.3rem 0; 
+}
+
 
 
 
