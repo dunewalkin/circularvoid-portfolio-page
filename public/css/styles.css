@@ -185,7 +185,7 @@ p span {
 .cv-info {
    grid-column: 1;
    grid-row: 1;
-   align-self: center;
+   /* align-self: center; */
 }
 
 .cv-languages {
@@ -214,6 +214,11 @@ p span {
    font-size: 1.4rem;
    margin-top: 20px;
    margin-bottom: 10px;
+}
+
+.education,
+.workshops {
+   line-height: 1.7;
 }
 
 
