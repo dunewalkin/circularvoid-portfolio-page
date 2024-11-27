@@ -48,7 +48,7 @@ p {
 
    @media (max-width: 768px) {
       font-size: 0.875rem; 
-      text-align: center;
+      // text-align: center;
    }
 }
 
@@ -92,6 +92,11 @@ p span {
       gap: 0; 
    }
 }
+
+.about-container p {
+   text-align: center;
+}
+
 
 .item {
    display: flex;
@@ -168,6 +173,10 @@ p span {
    @media (max-width: 1024px) {
       padding: 3rem 1.5rem;
    }
+
+   @media (max-width: 768px) {
+      padding: 1rem;
+   }
 }
 
 .cv-content {
@@ -181,7 +190,15 @@ p span {
 
    @media (max-width: 1024px) {
       gap: 1.5rem; 
-      padding: 0 1rem;
+   }
+
+   @media (max-width: 640px) {
+      gap: 1rem; 
+   }
+
+   @media (max-width: 510px) {
+      grid-template-columns: 1fr;
+      text-align: center;
    }
 }
 
@@ -193,6 +210,10 @@ p span {
    @media (max-width: 1024px) {
       font-size: 1.2rem; 
       margin-bottom: 0.3rem;
+   }
+
+   @media (max-width: 640px) {
+      font-size: 1rem; 
    }
 }
 
@@ -206,6 +227,10 @@ p span {
       font-size: 1.2rem; 
       margin-bottom: 0.5rem;
    }
+
+   @media (max-width: 640px) {
+      font-size: 1rem; 
+   }
 }
 
 .cv-info p,
@@ -214,9 +239,13 @@ p span {
    font-size: 1.2rem;
    color: #333;
 
-   // @media (max-width: 1024px) {
-   //    font-size: 1rem; 
-   // }
+   @media (max-width: 1024px) {
+      font-size: 1rem; 
+   }
+
+   @media (max-width: 640px) {
+      font-size: 0.9rem;
+   }
 }
 
 .cv-contact p:not(:first-child),
@@ -225,6 +254,10 @@ p span {
 
    @media (max-width: 1024px) {
       font-size: 1rem; 
+   }
+
+   @media (max-width: 640px) {
+      font-size: 0.9rem;
    }
 }
 
@@ -237,6 +270,11 @@ p span {
       font-size: 1.1rem; 
       margin-bottom: 0.6rem;
    }
+
+   @media (max-width: 640px) {
+      font-size: 1rem;
+      margin-bottom: 0.5rem;
+   }
 }
 
 .cv-links,
@@ -247,22 +285,28 @@ p span {
    @media (max-width: 1024px) {
       margin-bottom: 1rem; 
    }
+
+   @media (max-width: 640px) {
+      margin-bottom: 0.8rem;
+   }
 }
 
 .cv-container a {
    color: #555;
    text-decoration: none;
    font-size: 1.2rem;
+
+   @media (max-width: 1024px) {
+      font-size: 1rem; 
+   }
+
+   @media (max-width: 640px) {
+      font-size: 0.9rem;
+   }
 }
 
 .cv-container a:hover {
    text-decoration: underline;
-}
-
-.cv-photo-wrapper {
-   display: flex;
-   grid-column: 2;
-   grid-row: 1 / span 2;
 }
 
 .cv-photo {
@@ -272,48 +316,112 @@ p span {
 
    @media (max-width: 1024px) {
       max-width: 18rem; 
+   }
 
+   @media (max-width: 510px) {
+      max-width: 100%;
+   }
+}
+
+.cv-photo-wrapper {
+   display: flex;
+   grid-column: 2;
+   grid-row: 1 / span 2;
+
+   @media (max-width: 510px) {
+      grid-column: 1;
+      grid-row: 1;
+      justify-content: center; /* Центрируем фото */
    }
 }
 
 .cv-info {
    grid-column: 1;
    grid-row: 1;
+
+   @media (max-width: 510px) {
+      grid-column: 1;
+      grid-row: 2;
+   }
 }
 
 .cv-languages {
    grid-column: 1;
    grid-row: 3;
+
+   @media (max-width: 510px) {
+      grid-column: 1;
+      grid-row: 4;
+   }
 }
 
 .cv-links {
    grid-column: 2;
    grid-row: 3;
+
+   @media (max-width: 510px) {
+      grid-column: 1;
+      grid-row: 5;
+   }
 }
 
 .cv-contact {
    grid-column: 1;
    grid-row: 2;
+
+   @media (max-width: 510px) {
+      grid-column: 1;
+      grid-row: 3;
+   }
 }
 
 .cv-main h2 {
    font-family: "Druk Wide", sans-serif;
    font-size: 1.4rem; 
    margin-bottom: 0.3rem;
+
+   @media (max-width: 1024px) {
+      font-size: 1.2rem; 
+      margin-bottom: 0.2rem;
+   }
 }
    
 .cv-main h3 {
-   font-family: "Austin", serif;
    font-size: 1.4rem;
-   margin-top: 20px;
-   margin-bottom: 10px;
+   margin-top: 1.25rem;
+   margin-bottom: 0.625rem;
+
+   @media (max-width: 1024px) {
+      font-size: 1.1rem;
+      margin-top: 0.9375rem;
+      margin-bottom: 0.5rem;
+   }
+
+   @media (max-width: 640px) {
+      margin-bottom: 0.4rem;
+   }
 }
 
 .education,
 .workshops {
    line-height: 1.7;
+
+   @media (max-width: 1024px) {
+      line-height: 1.6;
+   }
 }
 
+.education li,
+.workshops li {
+
+   @media (max-width: 1024px) {
+      font-size: 1rem;
+   }
+
+   @media (max-width: 640px) {
+      font-size: 0.9rem;
+   }
+}
 
 .cv-main a {
    color: gray;
@@ -339,12 +447,30 @@ p span {
    display: grid;
    grid-template-columns: 1fr 1fr;
    gap: 1rem;
+
+   @media (max-width: 1024px) {
+      grid-template-columns: 1fr;
+      gap: 0rem;
+   }
+}
+
+.cv-grid h3,
+.cv-content,
+.performances h3,
+.performances h4 {
+   @media (max-width: 510px) {
+      text-align: center;
+   }
 }
 
 
 .sound-projects ul {
    columns: 2; 
    column-gap: 1rem;
+
+   @media (max-width: 1024px) {
+      columns: 1; 
+   }
 }
 
 .sound-projects li {
@@ -430,7 +556,6 @@ p span {
    width: 100%; 
    aspect-ratio: 350 / 470;
    border: none;
-   object-fit: cover;
    // min-height: 470px;
 
    // @media (max-width: 989px) {
@@ -459,6 +584,10 @@ p span {
       margin: 0 auto; 
       padding: 1rem;
    }
+}
+
+.sound-container p {
+   text-align: center;
 }
 
 .sound-content-wrapper {
@@ -492,8 +621,10 @@ p span {
    margin-block: 1.25rem;
 
    @media (max-width: 768px) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
       margin-block: 1rem;
-      // column-gap: clamp(1rem, 12vw, 4rem);;
+      column-gap: clamp(1rem, 12vw, 4rem);;
    }
 }
 
