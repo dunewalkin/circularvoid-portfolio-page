@@ -619,7 +619,8 @@ p span {
   .cv-grid h3,
   .cv-content,
   .performances h3,
-  .performances h4 {
+  .performances h4,
+  .sound-projects h3 {
     text-align: center;
   }
 }
