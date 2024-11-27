@@ -335,7 +335,7 @@ p span {
    @media (max-width: 510px) {
       grid-column: 1;
       grid-row: 1;
-      justify-content: center; /* Центрируем фото */
+      justify-content: center; 
    }
 }
 
@@ -559,12 +559,27 @@ p span {
 
 .bandcamp-item iframe {
    width: 100%; 
-   aspect-ratio: 350 / 470;
    border: none;
-   // min-height: 470px;
 
    // @media (max-width: 989px) {
-   //    aspect-ratio: 350 / 535;
+   //    aspect-ratio: 350 / 475;
+   //    // aspect-ratio: 350 / 535;
+   // }
+
+   // @media (max-width: 960px) {
+   //    aspect-ratio: 350 / 480;
+   // }
+
+   // @media (max-width: 935px) {
+   //    aspect-ratio: 350 / 485;
+   // }
+
+   // @media (max-width: 910px) {
+   //    aspect-ratio: 350 / 490;
+   // }
+
+   // @media (max-width: 899px) {
+   //    aspect-ratio: 350 / 520;   
    // }
 }
 
@@ -612,14 +627,7 @@ p span {
    color: #000; 
 }
 
-// .sound-container p {
-//    font-size: 1rem;
-//    line-height: 1.6;
-// }
-
 .sound-container ul {
-   // display: grid;
-   // grid-template-columns: 1fr 1fr;
    list-style-type: disc;
    display: flex;
    flex-direction: column;
@@ -631,7 +639,7 @@ p span {
       display: grid;
       grid-template-columns: 1fr 1fr;
       margin-block: 1rem;
-      column-gap: clamp(1rem, 12vw, 4rem);;
+      column-gap: clamp(1rem, 10vw, 4rem);;
    }
 }
 
@@ -643,7 +651,6 @@ p span {
 
    @media (max-width: 768px) {
       font-size: 0.875rem; 
-      // text-align: center;
    }
 }
 
@@ -652,8 +659,6 @@ p span {
    max-width: 45rem;
    margin-top: 3rem;
    padding-inline: 2rem;
-   /* border: 3px solid black; */
-   /* border-radius: 8px; */
 
    @media (max-width: 768px) {
       padding-inline: 1rem;

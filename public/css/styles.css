@@ -718,7 +718,6 @@ p span {
 
 .bandcamp-item iframe {
   width: 100%;
-  aspect-ratio: 350/470;
   border: none;
 }
 
@@ -779,7 +778,7 @@ p span {
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin-block: 1rem;
-    column-gap: clamp(1rem, 12vw, 4rem);
+    column-gap: clamp(1rem, 10vw, 4rem);
   }
 }
 
