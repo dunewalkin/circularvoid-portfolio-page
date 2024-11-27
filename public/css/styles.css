@@ -220,8 +220,10 @@ p span {
   }
 }
 
-.about-container p {
-  text-align: center;
+@media (max-width: 510px) {
+  .about-container p {
+    text-align: center;
+  }
 }
 
 .item {
@@ -743,8 +745,10 @@ p span {
   }
 }
 
-.sound-container p {
-  text-align: center;
+@media (max-width: 510px) {
+  .sound-container p {
+    text-align: center;
+  }
 }
 
 @media (max-width: 768px) {

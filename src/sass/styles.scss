@@ -94,7 +94,11 @@ p span {
 }
 
 .about-container p {
-   text-align: center;
+
+   @media (max-width: 510px) {
+      text-align: center;
+   }
+   
 }
 
 
@@ -588,7 +592,9 @@ p span {
 }
 
 .sound-container p {
-   text-align: center;
+   @media (max-width: 510px) {
+      text-align: center;
+   }
 }
 
 .sound-content-wrapper {
