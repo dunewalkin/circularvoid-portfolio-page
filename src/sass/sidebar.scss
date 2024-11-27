@@ -1,0 +1,90 @@
+.sidebar {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 15rem;
+   height: 100vh;
+   padding: 1.5rem 2rem; 
+
+   @media (max-width: 1024px) {
+      width: 13rem;  
+      padding: 1.5rem;  
+   }
+
+   @media (max-width: 768px) {
+      position:relative;
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.5rem 1rem;
+      border-bottom: 1px solid #ddd;
+   }
+}
+
+.sidebar h1 {
+   font-family: 'Druk Wide', sans-serif;
+   text-transform: uppercase;
+   color: #000;
+   font-size: 1.4rem;
+   font-weight: 600;
+   line-height: 1.2; 
+
+   @media (max-width: 1024px) {
+      font-size: 1.25rem;
+   }
+
+   @media (max-width: 768px) {
+      font-size: 1rem;
+   }
+}
+
+.sidebar nav {
+   margin-top: 2rem; 
+
+   @media (max-width: 768px) {
+      margin-top: 0; 
+   }  
+}
+
+.sidebar ul {
+   display: flex;
+   flex-direction: column;
+   gap: 0.5rem; 
+
+   @media (max-width: 768px) {
+      flex-direction: row;
+      justify-content: center;
+      gap: 1rem;
+   }
+}
+
+.sidebar a {
+   font-family: "Playfair Display", serif;
+   font-weight: 600;
+   font-size: 1rem; 
+   line-height: 1.4; 
+   text-transform: uppercase;
+   color: #666666;
+   transition: color 0.3s ease; 
+
+   @media (max-width: 768px) {
+      font-size: 0.875rem;
+   }
+}
+
+.sidebar a:hover {
+   color: #000;
+}
+
+.sidebar a.link-active {
+   color: #000;
+}
+
+
+
+
+
