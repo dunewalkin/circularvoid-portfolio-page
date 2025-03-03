@@ -560,27 +560,6 @@ p span {
 .bandcamp-item iframe {
    width: 100%; 
    border: none;
-
-   // @media (max-width: 989px) {
-   //    aspect-ratio: 350 / 475;
-   //    // aspect-ratio: 350 / 535;
-   // }
-
-   // @media (max-width: 960px) {
-   //    aspect-ratio: 350 / 480;
-   // }
-
-   // @media (max-width: 935px) {
-   //    aspect-ratio: 350 / 485;
-   // }
-
-   // @media (max-width: 910px) {
-   //    aspect-ratio: 350 / 490;
-   // }
-
-   // @media (max-width: 899px) {
-   //    aspect-ratio: 350 / 520;   
-   // }
 }
 
 
@@ -627,7 +606,7 @@ p span {
    color: #000; 
 }
 
-.sound-container ul {
+.sound-container-list {
    list-style-type: disc;
    display: flex;
    flex-direction: column;
@@ -673,6 +652,19 @@ p span {
    transform: rotate(4deg);
 }
 
+.sound-container-links-wrapper {
+   display: flex;
+   gap: 1.5rem; 
+   justify-content: center; 
+   margin-top: 2rem; 
+
+   @media (max-width: 640px) {
+      margin-top: 1.5rem; 
+      gap: 1rem; 
+
+   }
+}
+
 .sound-container a {
    color: #555;
    text-decoration: none;
@@ -690,11 +682,3 @@ p span {
 .sound-container a:hover {
    text-decoration: underline;
 }
-
-
-
-
-
-
-
-
