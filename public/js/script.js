@@ -13,14 +13,17 @@ document.addEventListener('DOMContentLoaded', () => {
          .then(data => {
             contentDiv.innerHTML = data;
 
+            window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+
             updateAllHeights();
 
             if (updateHistory) {
-               window.history.pushState({page: page}, "", page === 'about' ? '/' : `#${page}`);
+            window.history.pushState({ page: page }, "", page === 'about' ? '/' : `#${page}`);
             }
          })
          .catch(error => console.error('Ошибка загрузки:', error));
-   };
+      };
+
 
    links.forEach(link => {
       link.addEventListener('click', (event) => {
@@ -88,6 +91,9 @@ window.addEventListener('load', () => {
    setTimeout(updateAllHeights, 100); 
    window.addEventListener('resize', updateAllHeights);
 });
+
+
+
 
 
 
